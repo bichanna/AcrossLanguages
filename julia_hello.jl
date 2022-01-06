@@ -1,5 +1,5 @@
 function hello(name::String)
-	println("Hello ", name)
+	println("Hello $(name)")
 end
 
 using PyCall
