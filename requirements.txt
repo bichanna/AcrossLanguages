@@ -1,0 +1,6 @@
+# pip
+julia
+rpy2 requires(cffi, jinja2, pytz, tzlocal)
+
+# Pkg
+PyCall
