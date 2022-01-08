@@ -1,6 +1,10 @@
-# pip
+# Python
 julia
 rpy2 requires(cffi, jinja2, pytz, tzlocal)
 
-# Pkg
+# Julia
 PyCall
+RCall
+
+# R
+# See r_hello.R
