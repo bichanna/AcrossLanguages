@@ -1,4 +1,4 @@
-function hello(name::String)
+function jl_hello(name::String)
 	println("Hello $(name)")
 end
 
@@ -6,9 +6,9 @@ end
 using PyCall
 pushfirst!(PyVector(pyimport("sys")."path"), @__DIR__)
 pyhello = pyimport("python_hello")
-pyhello.hello("bichanna")
+pyhello.py_hello("bichanna")
 
 ## calling a R function
 using RCall
 R"""source("r_hello.R")"""
-R"""hello("bichanna")"""
+R"""r_hello("bichanna")"""
